@@ -7,6 +7,8 @@ function App() {
       <p>Welcome :)</p>
 
       <Ninjas name="Mageta" age="40" belt="yellow" />
+
+      <Ninjas name="Sukulu" age="100" belt="black" />
     </div>
   );
 }

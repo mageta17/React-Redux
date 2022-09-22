@@ -1,11 +1,11 @@
 function Ninjas(props) {
-    console.log(props)
-
+    // console.log(props)
+    const { name, age, belt } = props
     return (
       <div className="ninja">
-        <div>Name: { props.name }</div>
-        <div>Age: { props.age }</div>
-        <div>Belt: { props.belt }</div>
+        <div>Name: { name }</div>
+        <div>Age: { age }</div>
+        <div>Belt: { belt }</div>
       </div>
     );
 }
