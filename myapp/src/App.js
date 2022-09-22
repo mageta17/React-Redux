@@ -5,7 +5,7 @@ function App() {
     ninjas : [
       { name: 'Mageta', age: 25, belt: 'black', id: 1 },
       { name: 'Winnie', age: 28, belt: 'yellow', id: 2 },
-      { name: 'Mageta', age: 23, belt: 'white', id: 3 }
+      { name: 'Msuya', age: 20, belt: 'white', id: 3 }
     ]
   }
   return (
