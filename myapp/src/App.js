@@ -1,4 +1,5 @@
 import Ninjas from './ninja';
+import AddNinja from './addNinja';
 
 function App() {
   const state = {
@@ -14,6 +15,7 @@ function App() {
       <p>Welcome :)</p>
 
       <Ninjas ninjas={ state.ninjas} />
+      <AddNinja />
     </div>
   );
 }
