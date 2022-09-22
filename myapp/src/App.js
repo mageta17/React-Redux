@@ -13,7 +13,7 @@ function App() {
       <h1>My first React app!</h1>
       <p>Welcome :)</p>
 
-      <Ninjas ninjas={ state.ninjas } />
+      <Ninjas ninjas={ state.ninjas} />
     </div>
   );
 }

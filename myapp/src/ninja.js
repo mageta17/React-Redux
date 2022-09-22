@@ -1,6 +1,5 @@
-function Ninjas(props) {
-    // console.log(props)
-    const { ninjas } = props;
+// this is a stateless component
+function Ninjas({ ninjas }) {
     const ninjaList = ninjas.map(ninja => {
         return (
             <div className="ninja" key={ ninja.id }>
