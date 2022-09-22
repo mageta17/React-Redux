@@ -1,32 +1,35 @@
-function AddNinja () {
-    const state = {
+import React, {Component} from 'react';
+class AddNinja extends Component {
+    state = {
         name: null,
         age: null,
         belt: null
     }
-    function handleChange(e) {
+    handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
         })
     }
-    function handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault();
-        console.log(state)
+        console.log(this.state)
     }
 
-    return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" onChange={handleChange} />
-                <label htmlFor="name">Age:</label>
-                <input type="text" id="age" onChange={handleChange} />
-                <label htmlFor="name">Belt:</label>
-                <input type="text" id="belt" onChange={handleChange} />
-                <button>Submit</button>
-            </form>
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" id="name" onChange={this.handleChange} />
+                    <label htmlFor="name">Age:</label>
+                    <input type="text" id="age" onChange={this.handleChange} />
+                    <label htmlFor="name">Belt:</label>
+                    <input type="text" id="belt" onChange={this.handleChange} />
+                    <button>Submit</button>
+                </form>
+            </div>
+        )
+    }
 }
 
 export default AddNinja;
