@@ -1,14 +1,19 @@
 import Ninjas from './ninja';
 
 function App() {
+  const state = {
+    ninjas : [
+      { name: 'Mageta', age: 25, belt: 'black', id: 1 },
+      { name: 'Winnie', age: 28, belt: 'yellow', id: 2 },
+      { name: 'Mageta', age: 23, belt: 'white', id: 3 }
+    ]
+  }
   return (
     <div className="App">
       <h1>My first React app!</h1>
       <p>Welcome :)</p>
 
-      <Ninjas name="Mageta" age="40" belt="yellow" />
-
-      <Ninjas name="Sukulu" age="100" belt="black" />
+      <Ninjas ninjas={ state.ninjas } />
     </div>
   );
 }
