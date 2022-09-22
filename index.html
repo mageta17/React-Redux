@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    // this library allow jsx to be render in the browser
+    <!-- this library allow jsx to be render in the browser --> 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    // core react library
+    <!-- core react library -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 
-    // react DOM library | this render Components into the DOM
+    <!-- react DOM library | this render Components into the DOM -->
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <title>Document</title>
 </head>
@@ -21,11 +21,15 @@
     
     <script type="text/babel">
         class App extends React.Component {
+            state = {
+                name: 'Mageta',
+                age: 25
+            }
             render() {
                 return (
                     <div className="app-content">
                         <h1>Hey, ninjas</h1>
-                        <p>{ Math.random() * 10 }</p>
+                        <p>My name is: { this.state.name } and I am { this.state.age }</p>
                     </div>
                 )
             }
