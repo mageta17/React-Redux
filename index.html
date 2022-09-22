@@ -26,13 +26,18 @@
                 age: 25
             }
 
-            handleClick(e) {
-                console.log(e.target);
+            // Note: we define our custome functions inside compenents as allow function when we want to use (this) to inside them when we change state or access them
+            handleClick = (e) => {
+                //console.log(e.target);
+                this.setState({
+                    name: 'Sukulu'
+                })
+                console.log(this.state);
             }
-            handleMouseOver(e) {
+            handleMouseOver = (e) => {
                 console.log(e.target, e.pageX);
             }
-            handleCopy(e) {
+            handleCopy = (e) => {
                 console.log("Try being original for once!");
             }
 
