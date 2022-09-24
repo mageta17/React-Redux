@@ -1,3 +1,5 @@
+import './ninjas.css'
+
 // this is a stateless component
 function Ninjas({ ninjas, deleteNinja }) {
     return (
