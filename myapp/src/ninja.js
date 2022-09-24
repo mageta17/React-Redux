@@ -32,6 +32,7 @@ function Ninjas({ ninjas }) {
                                 <div>Name: { ninja.name }</div>
                                 <div>Age: { ninja.age }</div>
                                 <div>Belt: { ninja.belt }</div>
+                                <div>Belt: { ninja.id }</div>
                             </div> 
                         )
                     } else {
